@@ -1,0 +1,249 @@
+@font-face {
+    font-family: "A";
+    src: url("../fonts/baslik1.otf");
+}
+
+@font-face {
+    font-family: "B";
+    src: url("../fonts/Nexa\ Bold.otf");
+}
+
+
+@font-face {
+    font-family: "C";
+    src: url("../fonts/baslik3.otf");
+}
+
+
+@font-face {
+    font-family: "D";
+    src: url("fonts/Roboto-Medium.ttf");
+}
+
+
+@font-face {
+    font-family: "E";
+    src: url("fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "F";
+    src: url("fonts/Roboto-Thin.ttf");
+}
+
+
+body {
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+}
+   
+.fullScreen {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    overflow-y: auto;
+    overflow-x: hidden;
+    justify-content: flex-end;
+}
+   
+.mainScreen {
+    display: flex;
+    width: calc(100% - 250px);
+    min-height: 100vh;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    /* background: radial-gradient(ellipse at top, #e73528, rgb(228, 175, 62)), radial-gradient(ellipse at bottom, #4d0157, rgb(13, 0, 197)); */
+    /* background: linear-gradient(320deg, #f52e2e, rgb(228, 175, 62)); */
+    background: rgb(238, 238, 238);
+   }
+
+.header {
+
+    position: absolute;
+    top: 0;
+    width: calc(100% - 270px);
+    display: flex;
+    flex-direction: column;
+    height: 84px;
+    display: none;
+}
+
+.welcome {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: "F";
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.pagename {
+    width: 100%;
+    height: 84px;
+    color: rgb(0, 0, 0);
+    font-family: "B";
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: center;
+    font-size: 40px;
+    border-style: solid;
+    border-width: 1px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    color: white;
+    border-color: #d8d8d8;
+    /*background: linear-gradient(320deg,  #000000,  rgb(240, 3, 42));*/
+    background: rgb(24 34 41);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 250px;
+    height: auto;
+    min-height: calc(100%);
+    background: linear-gradient(150deg, rgb(34,44,51) 10%, rgb(50, 50, 50) 100%);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+    color: white;
+    font-family: "B";
+    letter-spacing: 2px;
+    font-size: 18px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #606060;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    padding-bottom: 10px;
+}
+
+
+.p1 {
+        color: rgb(255, 255, 255);
+        font-family: "B";
+        font-size: 25px;
+        border-style: solid;
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        border-width: 1px;
+        border-color: rgba(120,3,4, 1);
+        border: 0;
+        padding: 0;
+        letter-spacing: 6px;
+        text-align: center;
+}
+
+.p2 {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background: rgba(120,3,4, 0);
+    color: rgb(255, 255, 255);
+    font-family: "B";
+    padding-top: 4px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.navs {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    overflow: hidden;
+    
+}
+
+.nav {
+    color: #ffffff;
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    padding-left: 20px;
+    border: solid 1px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    font-family: 'F';
+    font-size: 11px;
+    border-color: #2e2e2e;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+.nav:hover {
+   background: rgb(190, 163, 5);
+}
+
+.navbarbot {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.navicons {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 10px;
+}
+
+.navimg {
+    width: 64px;
+    height: 64px;
+}
+
+.navimg2 {
+    width: 53px;
+    height: 53px;
+}
+
+
+@media only screen and (max-width: 800px) { 
+
+    .navbar {
+        display: none;
+    }
+    .header {
+        width: 100%;
+    }
+    .mainScreen {
+        width: 100%;
+    }
+
+}
