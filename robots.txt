@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /Panel/
+Allow: /Utilities/
+Disallow: /Utilities/conn.php
+Allow: /Panel/Uploads/
+
+Sitemap: https://www.erhukuk.com.tr/sitemap.xml

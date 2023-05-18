@@ -1,0 +1,467 @@
+.enterance {
+    display: flex;
+    min-height: 400px;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+    /* align-items: center; */
+    z-index: 4;
+    height: auto;
+    min-height: 100vh;
+    /* background-color: rgba(15, 15, 15, 0.8); */
+    background-color: rgba(44, 0, 0, 0.8);
+    background-color: rgba(17, 17, 17, 0.9);
+    background-color: rgb(17 17 17 / 54%);
+    background-color: rgb(17 17 17 / 86%);
+    background-color: rgba(44, 0, 0, 0.8);
+}
+
+
+
+
+.upperContent {
+    height: auto !important;
+    min-height: 100vh;
+}
+
+.Imagex {
+    /* height: calc(15vh + 15vw) !important; */
+    height: 100vh !important;
+    min-height: 600px;
+}
+
+.contentbox {
+    width: 100%;
+    height: auto;
+    background-color: rgb(241, 241, 241, O);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 60vh;
+}
+
+.emptySpace {
+    height: 15vh;
+    min-height: 100px;
+}
+
+
+.infoHeader {
+    display: flex;
+    height: auto;
+    font-size: calc(3vw + 3vh);
+    /* width: 32vw; */
+    width: 100vw;
+    font-family: "B";
+    /* font-weight: 600; */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    letter-spacing: 2px;
+    /* padding-left: 10vw; */
+    background: rgba(15, 15, 15, 0.7);
+    background: rgb(255 255 255 / 0%);
+    border-bottom-right-radius: 10px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: calc(1vh + 1vw);
+}
+
+.infoContent {
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+    width: 91vw;
+    height: auto;
+    font-family: "S";
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: calc(1.3vw + 1.3vh);
+    word-spacing: 1px;
+    color: rgb(0 0 0);
+    padding: 4vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    box-shadow: -1px -6px 5px -5px rgb(105, 105, 105), -5px -2px 5px -5px rgb(102, 102, 102);
+    flex-direction: column;
+    align-content: center;
+    background: rgb(250 250 250);
+    min-height: 58vh;
+}
+
+
+
+
+
+
+#image {
+    background-repeat: no-repeat;
+    -o-background-size: cover !important;
+    background-size:cover !important;
+    -moz-background-size: cover !important;
+    -webkit-background-size: cover !important;
+    background-position: center !important;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+.h1ek {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.h1ekin {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: "B";
+    font-size: 28px;
+    color: #891b1b;
+}
+
+.line {
+    width: 30px;
+    height: 2.5px;
+    background-color: #891b1b;
+}
+
+.h1 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+    font-size: 45px;
+    font-weight: 400;
+    align-content: center;
+    justify-content: center;
+    color: #ffffff;
+    font-family: "P";
+    letter-spacing: 1px;
+}
+
+#h2ek {
+    margin-top: calc(0.5vh + 0.5vw);
+}
+
+#h2ekin {
+    color: white;
+    font-size: 20px;
+    border-style: solid;
+    border: 0;
+    border-bottom: 1px;
+    border-style: solid;
+    padding-bottom: 10px;
+}
+
+#line2 {
+    background-color: white;
+    visibility:hidden;
+}
+
+
+.imgTumEkipContainerAll {
+    align-self: center;
+    width: 70vw;
+    height: 55vh;
+    min-height: 0;
+    min-width: 0;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.imgTumEkipContainer {
+    object-fit: cover;
+    z-index: -1;
+    position: absolute;
+    overflow: hidden;
+    width: 70vw;
+    height: 55vh;
+}
+
+.imgTumEkip {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    min-width: 0;
+}
+
+.imgTumEkipShadow {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 46, 46, 0.347);
+}
+
+.scrollDownImage {
+    width: 30px;
+    height: 30px;
+    min-height: 30px;
+    min-width: 30px;
+}
+
+.scrollDownButton {
+    display: flex;
+    width: 100%;
+    height: auto;
+    /* margin-bottom: 30px; */
+    margin-top: 15px;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-iteration-count: 10;
+    -webkit-animation-iteration-count: 10;
+    animation-name: Jump;
+    -webkit-animation-name: Jump;
+    flex-direction: column;
+    align-items:  center;
+    justify-content: center;
+}
+
+@keyframes Jump {
+    0% {
+        transform: translate3d(0,0,0)
+    }
+    50% {
+        transform: translate3d(0,30px,0);
+    }
+    100% {
+        transform: translate3d(0,0,0)
+    }
+}
+
+@-webkit-keyframes Jump {
+    0% {
+        transform: translate3d(0,0,0)
+    }
+    50% {
+        transform: translate3d(0,30px,0);
+    }
+    100% {
+        transform: translate3d(0,0,0)
+    }
+}
+
+
+
+.tumEkibKutusu {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: calc(3vh + 3vw);
+}
+
+.ekibUyesi {
+    background: white;
+    padding: 20px;
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: calc(1vh + 1vw);
+    margin-bottom: calc(1vh + 1vw);
+    border-style: solid;
+    border-right: 0;
+    border-left: 0;
+    border-width: 1px;
+    border-color: rgb(61, 61, 61);
+    /* box-shadow: 0px 0px 8px 1px #cdcdcd; */
+    border: 0;
+}
+
+#ters {
+    margin-right: 0;
+    margin-left: calc(2vh + 2vw);
+    flex-direction: row-reverse;
+}
+
+.ekibUyeResimBox {
+    height: calc(10vh + 10vw);
+    width: calc(8vh + 8vw);
+    background-color: gray;
+    margin-right: calc(2vh + 2vw);
+    height: 100%;
+}
+
+.ekibUyeContext {
+    width: 50%;
+    text-align: left;
+    min-height: 316px;
+}
+
+.straightline {
+    height: 100%;
+    width: 1px;
+    background-color: rgb(73, 73, 73);
+    margin-left: calc(50% - calc(8vh + 8vw));
+}
+
+#ters2 {
+    margin-left: 0;
+    margin-right: calc(50% - calc(8vh + 8vw));
+}
+
+.ekibUyeIcerik {
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.ekibUyeBaslik {
+    font-size: 21px;
+    font-weight: 900;
+    color: #891b1b;
+}
+
+
+.ekibUyeResimBox {
+    align-self: center;
+    min-height: 0;
+    min-width: 0;
+    overflow: hidden;
+    z-index: 100;
+    height: 100%;
+    width: calc(8vh + 8vw);
+    box-shadow: 0px 0px 1px 0px #333333;
+}
+
+
+.ekibUyeResmi {
+    object-fit: cover;
+    height: 100%;
+    width: calc(8vh + 8vw);
+    min-height: 0;
+    min-width: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px), (max-height: 900px){
+    .infoContent {
+        font-size: 11px;
+        letter-spacing: 1px;
+        line-height: 25px;
+        word-break:normal;
+        width: 86vw;
+        padding: 100px;
+    }
+    .h1ekin {
+        font-size: 17px;
+    }
+    .h1 {
+        font-size: 30px;
+    }
+    .contentbox {
+        align-items: center;
+    }
+    .enterance {
+        justify-content: space-evenly;
+    }
+    .imgTumEkipContainer {
+        width: 90vw;
+    }
+    .imgTumEkipContainerAll {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .imgTumEkipContainer {
+        display: none;
+    }
+    .imgTumEkipContainerAll {
+        display: none;
+    }
+    .scrollDownButton {
+        display: none;
+    }
+    .infoContent {
+        padding: 20px;
+        padding-top: 50px;
+    }
+    .tumEkibKutusu {
+        margin-top: 0;
+        align-items: center;
+    }
+    .ekibUyesi {
+        width: 90%;
+        flex-direction: column;
+    }
+    #ters {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .straightline {
+        display: none;
+    }
+    /*
+    #ters2 {
+        margin: 0;
+        margin-top: 30px;
+    }
+    .straightline {
+        height: 1px;
+        width: calc(86vw + 40px);
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    */
+    .ekibUyeResimBox {
+        height: 40vh;
+        width: 70vw;
+        margin-bottom: 20px;
+    }
+    .ekibUyeResmi {
+        height: 40vh;
+        width: 70vw;
+    }
+    .ekibUyeContext {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+    }
+    .ekibUyeBaslik {
+        text-align: center;
+    }
+    .ekibUyeIcerik {
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 700px)
+{
+    .straightline {
+        display: none;
+    }
+    .ekibUyeResimBox {
+        width: calc(12vh + 12vw);
+    }
+    .ekibUyeResmi {
+        width: calc(12vh + 12vw);
+    }
+    .ekibUyeContext {
+        width: calc(100% - calc(12vh + 12vw));
+    }
+}

@@ -1,0 +1,627 @@
+/* W < 1700 OR ( 600  < H < 830 && )*/
+
+@media screen and (max-width: 1700px), (max-height: 830px) and (min-height: 600px){
+    .p2Content {
+        margin-bottom: 0;
+    }
+    .content_for_slides {
+        font-size: 15px;
+        line-height: 60px;
+    }
+    .header_for_slides {
+        font-size: 40px;
+    }
+    .emptySpace2 {
+        height: calc(1vh + 1vw);
+    }
+    #blog_tek_icerik {
+        font-size: 13px;
+        line-height: 30px;
+        letter-spacing: 5px;
+    }
+    #blog_tek_baslik {
+        font-size: 15px;
+    }
+}
+
+/* W < 800 OR ( 400 < H < 830 && )*/
+@media screen and (max-height: 830px) and (min-height: 400px), (max-width: 800px) {
+    .empty {
+        height: 1%;
+    }
+    .emptySpace {
+        height: calc(2vh + 2vw);
+    }
+    .bizeUlasinBox { 
+        align-items: center;
+        line-height: 20px;
+    }
+    .bizeUlasinHeader {
+        line-height: 25px;
+    }
+    #SlideContainer {
+        height: auto;
+    }
+    #mainPageSlider input[type=radio] {
+        height: 1%;
+    }
+    .empty2 {
+        height: 13%;
+    }
+    .header_for_slides {
+        text-align: center;
+        height: auto;
+    }
+    .content_for_slides {
+        text-align: center;
+        line-height: 40px;
+        letter-spacing: 3px;
+    }
+    #blog_tek_baslik {
+        letter-spacing: 5px;
+        font-size: 12px;
+    }
+    #blog_tek_icerik {
+        line-height: 24px;
+        word-break: break-all;
+        font-size: 15px;
+        letter-spacing: 3px;
+    }
+    #SlideContainer .slide {
+        justify-content: flex-start;
+        height: auto;
+    }
+    .sh2 {
+        height: auto;
+    }
+}
+
+
+
+@media screen and (max-height: 600px) and (min-height: 400px), (max-width: 600px) {
+    .header_for_slides {
+        font-size: 25px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .sh2 {
+        line-height: 30px;
+        padding-bottom: 20px;
+    }
+    .content_for_slides {
+        line-height: 30px;
+        letter-spacing: 2px;
+    }
+    #blog_tek_baslik {
+        letter-spacing: 3px;
+        font-size: 12px;
+    }
+    #blog_tek_icerik {
+        line-height: 22px;
+        font-size: 13px;  
+    }
+    #blog_tek_yazar {
+        font-size: 11px;
+    }
+    .p2Content {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 500px) and (max-height: 750px){
+    #blog_tek_icerik {
+        line-height: 17px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) and (min-height: 300px), (max-height: 400px) {
+    .p2Content {
+        margin-bottom: 0;
+    }
+    .header_for_slides {
+        text-align: center;
+        font-size: 20px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        line-height: 30px;
+    }
+    .empty2 {
+        height: 9%;
+    }
+    #SlideContainer {
+        height: auto;
+    }
+    #overflow {
+        height: auto;
+    }
+    .sh2 {
+        padding-top: 5px;
+        padding-bottom: 50px;
+    }
+    .content_for_slides {
+        line-height: 22px;
+        letter-spacing: 4px;    
+        font-size: 12px;
+        word-wrap: break-word;
+    }
+    #blog_tek_baslik {
+        letter-spacing: 2px;
+        font-size: 8px;
+    }
+    #blog_tek_icerik {
+        line-height: 17px;
+        font-size: 13px;
+    }
+    #blog_tek_yazar {
+        font-size: 8px;
+    }
+    .bizeUlasinBox { 
+        align-items: center;
+        line-height: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .bizeUlasinHeader {
+        line-height: 25px;
+    }
+}
+
+
+@media screen and (max-height: 350px), (max-width: 350px) and (max-height: 800px) {
+    .header_for_slides {
+        font-size: 15px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        line-height: 20px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .content_for_slides {
+        line-height: 17px;
+        letter-spacing: 3px;    
+        font-size: 10px;
+        word-wrap: break-word;
+    }
+    #blog_tek_baslik {
+        letter-spacing: 1.2px;
+        font-size: 9.5px;
+    }
+    #blog_tek_icerik {
+        line-height: 13px;
+        font-size: 11px;
+    }
+    #blog_tek_yazar {
+        font-size: 8.5px;
+    }
+}
+
+@media screen and (max-height: 500px) and (max-width: 300px)
+{
+    #SlideContainer .slide {
+        justify-content: flex-start;
+        height: auto;
+    }
+    .sh2 {
+        height: auto;
+    }
+    .bizeUlasinBox { 
+        align-items: center;
+        line-height: 20px;
+    }
+    .bizeUlasinHeader {
+        line-height: 25px;
+    }
+}
+
+
+@media screen and (max-width: 400px) and (min-width: 300px) 
+{
+    .content_for_slides {
+        line-height: 22px;
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (min-width: 200px) and (max-width: 450px) and (max-height: 900px) and (min-height: 500px) {
+    .sh2 {
+        padding-bottom: 20px;
+    }
+}
+
+
+@media screen and (max-width: 600px), (max-height: 800px) {
+    .mainPageUpperSection {
+        height: 40vh !important;
+    }
+    .mainImageSubContainer {
+        height: 40vh !important;
+    }
+    #gounv {
+        display: none;
+    }
+    #blog_tek_baslik {
+        margin-top: 40px;
+        letter-spacing: 5px;
+    }
+    .content_for_slides {
+        line-height: 20px;
+        font-size: 13px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+    .header_for_slides {
+        letter-spacing: 5px;
+    }
+    #getvis {
+        display: flex;
+    }
+    #bullets label {
+        display: none;
+    }
+    #empty {
+        display: none;
+    }
+    #bullets {
+        display: none;
+    }
+    .sh2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;    
+    }
+    .gounv {
+        display: none !important;
+    }
+}
+
+/* */
+
+@media screen and (max-height: 700px), (max-width: 500px) {
+    .mainPageUpperSection {
+        height: 50vh !important;
+    }
+    .mainImageSubContainer {
+        height: 50vh !important;
+    }
+    #mainPageSlider {
+        justify-content: center;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 1500px)  {
+    .UC_menu.nav-colored {
+        margin-right: 10%;
+    }
+     #controls {
+        margin-top: 26%;
+    }
+}
+   
+   @media screen and (max-width: 1250px)  {
+    .UC_menu.nav-colored {
+        margin-right: 1%;
+    }
+    #controls {
+        margin-top: 30%;
+    }
+   }
+   
+   
+   @media screen and (max-width: 1000px)  {
+   
+       .arabulbig {
+           display: none
+       }
+       
+       .arabulsmall {
+           display: flex;
+       }
+       .erhuksmall {
+           display: flex;
+       }
+   
+       .erhukbig {
+           display: none;
+       }
+   
+   
+   
+    .UC_menu ul{
+        display: none;
+    }
+    .nav-transparent {
+        background: rgba(0, 0, 0, 0);
+    }
+    .p2desc {
+        width: 60%;
+    }
+    .disappear {
+        display: none;
+    }
+    .Imagex2 {
+        height: 160vh;
+    }
+    #tabmenu.passive {
+        display: flex;
+    position: absolute;
+    height: 92vh;
+    width: 100%;
+    top: 75px;
+    background: rgba(20, 20, 20, 0.9);
+    left: -1000px;
+    -webkit-animation: slide 0.8s ease-in;
+    -webkit-animation-delay: 0.2s;
+    animation: slide 0.8s forwards;
+    animation-delay: 0.2s;
+    overflow: hidden;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    z-index: 20;
+    }
+   
+    @-webkit-keyframes slide {
+        100% { left: 0px;  }
+    }
+    
+   
+    @keyframes slide {
+        100% { left: 0px; }
+    }
+   
+   
+    #tabmenu{
+    display: none;
+    }
+   
+   
+    #tabmenu.active {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    display: flex;
+    position: absolute;
+    height: 92vh;
+    width: 100%;
+    background: rgba(20, 20, 20, 0.8);
+    left: 0px;
+    -webkit-animation: slider 0.8s ease-in;
+    -webkit-animation-delay: 0.2s;
+    animation: slider 0.8s forwards;
+    animation-delay: 0.2s;
+    overflow: hidden;
+    top: 75px;
+    z-index: 20;
+    }
+   
+    @-webkit-keyframes slider {
+        100% { left: -1000px;  }
+    }
+   
+    @keyframes slider {
+        100% { left: -1000px; }
+    }
+   
+    .tab {
+        display: flex;
+        height: 80px;
+        width: 100%;
+        border-style: solid;
+        border-color: #3f3f3f;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-width: 1px;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    .tabl {
+        text-decoration: none;
+        font-size: 15px;
+        text-align: center;
+        font-family: "B";
+        color: white;
+        letter-spacing: 3px;
+    }
+   
+   
+   
+   
+    .UC_menu ul li a{
+        font-size: 18px;
+    }
+    .UC_upperMenu {
+        height: auto;
+        flex-direction: column;
+    }
+    .UC_logo {
+        margin-left: 12px;
+        margin-top: 10px;
+        flex-direction: row;
+        align-items: center;
+    }
+    #erHukuk {
+        border-style: solid;
+        border-top: 0;
+        border-left: 0;
+        border-bottom: 0;
+        border-width: 1px;
+        border-color: rgba(120,3,4, 1);
+        padding-right: 15px;
+        margin-right: 10px;
+        margin-left: 20px;
+        width: 50px;
+        height: 35px;
+        font-family: "B";
+    }
+    #erHukuk.nav-colored {
+        border-style: solid;
+        border-top: 0;
+        border-left: 0;
+        border-bottom: 0;
+        border-width: 1px;
+        border-color: rgba(120,3,4, 1);
+        padding-right: 15px;
+        margin-right: 10px;
+        margin-left: 20px;
+        width: 50px;
+        height: 35px;
+        font-family: "B";
+    }
+    .UC_menu {
+        margin-right: 0;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        height: auto;
+        padding-top: 0;
+    }
+    .hiddenButton {
+        display: block;
+        width: 60px;
+        height: 60px;
+        min-height: 60px;
+        min-width: 60px;
+        margin-right: 10px;
+        border-style: hidden;
+        border-radius: 10px 10px 0 0;
+        background-color: rgba(0, 0, 0, 0);
+    }
+   
+    .menuIcon {
+        height: 40px;
+        width: 40px;
+        min-width: 0;
+        min-height: 0;
+    }
+   
+    .BCTabs {
+        width: 200px;
+        font-size: 20px;
+        height: 40px;
+    }
+    #arabulucukDanismanlik {
+        height: 35px;
+        font-family: "B";
+        font-size: 15px;
+    }
+    #arabulucukDanismanlik.nav-colored {
+        height: 35px;
+        font-family: "B";
+        font-size: 15px;
+    }
+    .footerContent {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footerBlog {
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .bContent {
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    .bHeader {
+        align-items: center;
+        justify-content: center;
+    }
+    .bEntry {
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    .footerServices {
+        width: 100%;
+    }
+    #controls {
+        margin-top: 35%;
+    }
+   }
+   @media screen and (max-width: 750px)  {
+    #controls {
+        margin-top: 50%;
+    }
+   }
+   
+   @media screen and (max-width: 600px)  {
+       .CT_B_All {
+           height: auto;
+       }
+     .sline {
+       display: none;
+     }
+     .h3 {
+       letter-spacing: 1px;
+   
+     }
+   
+   
+     .Imagex2 {
+       height: 150vh;
+     }
+    #controls {
+        display: none;
+    }
+    .BCTabs {
+        width: 100px;
+        font-size: 15px;
+        height: 60px;
+    }
+    .p2desc {
+        width: 90%;
+        font-size: 14px;
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+    .hiddenButton {
+        width: 50px;
+        height: 50px;
+        min-height: 50px;
+        min-width: 50px;
+        margin-right: 20px;
+    }
+    .h1, .h2, .h3 {
+        width: 95%;
+    }
+   
+    .h3 {
+       justify-content: center;
+    }
+    .Imagex {
+        object-fit:scale-down;
+    }
+   .p2box {
+       height: 100px;
+       width: 150px;
+       justify-content: center;
+     }
+   
+   .p2boxtext {
+       font-size: 14px;
+   }
+   
+   .p2boximg {
+       width: 48px;
+       height: 48px;
+   }
+   }
