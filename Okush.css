@@ -1,23 +1,24 @@
 .enterance {
     display: flex;
-    min-height: 120px;
     width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
     align-content: center;
     z-index: 4;
-    background-color: rgb(46 0 0 / 75%);
-    height: 120px;
+    background: rgba(24, 24, 24, 0.7);
 }
 
 
 .upperContent {
-    height: 120px;
+    height: auto !important;
+    min-height: 100vh;
 }
 
 .Imagex {
-    height: 120px;
+    height: 50vh;
 }
 
-.h1 {
+.h4 {
     font-size: 36px;
     font-family: "S";
     font-weight: 500;
@@ -27,6 +28,89 @@
     margin-left: 50px;
 }
 
+.infoHeader {
+    display: flex;
+    height: auto;
+    font-size: calc(3vw + 3vh);
+    width: 100vw;
+    font-family: "B";
+    color: rgb(0, 0, 0);
+    text-align: center;
+    letter-spacing: 2px;
+    background: rgb(255 255 255 / 0%);
+    border-bottom-right-radius: 10px;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    margin-bottom: 102px;
+    align-items: center;
+}
+
+.h1ek {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.h1ekin {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: "B";
+    font-size: 15px;
+    color: rgba(137, 27, 27, 0.651);
+}
+
+.line {
+    width: 10px;
+    height: 2.5px;
+    background-color: rgba(137, 27, 27, 0.651);
+}
+
+.h1 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 400;
+    align-content: center;
+    justify-content: center;
+    color: #ffffffa6;
+    font-family: "P";
+    letter-spacing: 1px;
+}
+
+#h2ek {
+    margin-top: calc(0.5vh + 0.5vw);
+    justify-content: flex-end;
+}
+
+#h2ekin {
+    color: white;
+    font-size: 30px;
+    border-style: solid;
+    letter-spacing: 3px;
+    border: 0;
+    font-family: "P";
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: #a3a3a370;
+    padding-bottom: 10px;
+    border: 0;
+}
+
+.erhukukheader {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.emptySpace {
+    height: 26vh;
+    width: 100%;
+}
 
 .content_1 {
     display: flex;
@@ -43,6 +127,7 @@
 .content_1_in {
     display: flex;
     height: auto;
+    flex-direction: row-reverse;
     width: 75%;
     margin-top: 100px;
     justify-content: space-between;
@@ -161,8 +246,8 @@
 .blogh1 {
     width: 100%;
     height: auto;
-    font-size: 32px;
-    font-family: "S";
+    font-size: 26px;
+    font-family: "SB";
 }
 
 .bloginfos {
@@ -177,7 +262,7 @@
 .author {
     width: 60%;
     height: auto;
-    font-size: 12px;
+    font-size: 15px;
     font-family: "S";
     color: #8f8f8f;
 }
@@ -185,10 +270,11 @@
 .blogtags {
     width: 90%;
     height: auto;
-    font-size: 12px;
+    font-size: 15px;
     font-family: "S";
-    color: #8f8f8f;
-    margin-top: 9px;
+    color: #a90000;
+    margin-top: 20px;
+    font-weight: 900;
 }
 
 
@@ -290,6 +376,18 @@
     .author {
         width: 90%;
     }
+    .h1ekin {
+        font-size: 11px;
+    }
+    .h1 {
+        font-size: 20px;
+    }
+    #h2ekin {
+        font-size: 27px;
+    }
+    .Imagex {
+        height: 80vh;
+    }
 }
 
 @media screen and (max-width: 650px)  {
@@ -308,6 +406,12 @@
     .blogh1 {
         text-align: center;
         font-size: 27px;
+    }
+    #h2ek {
+        margin-top: 30px;
+    }
+    #h2ekin {
+        font-size: 23px;
     }
 }
 
@@ -343,5 +447,11 @@
         font-size: 15px;
         width: 98%;
         word-break: break-all;
+    }
+}
+
+@media screen and (max-width: 1000px), (max-height: 600px){
+    .infoHeader {
+        flex-direction: column;
     }
 }

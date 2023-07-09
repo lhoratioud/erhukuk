@@ -1,35 +1,52 @@
 @font-face {
     font-family: "A";
-    src: url("../fonts/baslik1.otf");
+    src: url("../fonts/baslik1.woff2") format('woff2');
+    font-display: swap;
 }
 
 @font-face {
     font-family: "B";
-    src: url("../fonts/Nexa\ Bold.otf");
+    src: url("../fonts/NexaBold.woff2") format('woff2');
+    font-display: swap;
 }
 
 
 @font-face {
     font-family: "C";
-    src: url("../fonts/baslik3.otf");
+    src: url("../fonts/OpenSans-Light.woff2") format('woff2');
+    font-display: swap;
 }
-
 
 @font-face {
     font-family: "D";
-    src: url("fonts/Roboto-Medium.ttf");
+    src: url("../fonts/Roboto-Medium.woff2") format('woff2');
+    font-display: swap;
 }
 
 
 @font-face {
     font-family: "E";
-    src: url("fonts/Roboto-Regular.ttf");
+    src: url("../fonts/Roboto-Regular.woff2") format('woff2');
+    font-display: swap;
 }
 
 @font-face {
     font-family: "F";
-    src: url("fonts/Roboto-Thin.ttf");
+    src: url("../fonts/Roboto-Thin.woff2") format('woff2');
 }
+
+@font-face {
+    font-family: "S";
+    src: url("../fonts/sofiapro-light.otf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "P";
+    src: url("../fonts/Prata-Regular.woff2") format('woff2');
+    font-display: swap;
+}
+
 
 
 body {
@@ -49,7 +66,7 @@ body {
    
 .mainScreen {
     display: flex;
-    width: calc(100% - 250px);
+    width: calc(100% - 301px);
     min-height: 100vh;
     justify-content: center;
     align-content: center;
@@ -58,7 +75,7 @@ body {
     align-items: center;
     /* background: radial-gradient(ellipse at top, #e73528, rgb(228, 175, 62)), radial-gradient(ellipse at bottom, #4d0157, rgb(13, 0, 197)); */
     /* background: linear-gradient(320deg, #f52e2e, rgb(228, 175, 62)); */
-    background: rgb(238, 238, 238);
+    background: rgb(255, 255, 255);
    }
 
 .header {
@@ -76,12 +93,12 @@ body {
     width: 100%;
     height: 40px;
     font-size: 20px;
-    color: white;
+    color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
-    font-family: "F";
+    font-family: "B";
     letter-spacing: 2px;
     margin-bottom: 20px;
 }
@@ -115,10 +132,17 @@ body {
     position: absolute;
     left: 0;
     top: 0px;
-    width: 250px;
+    width: 300px;
     height: auto;
     min-height: calc(100%);
-    background: linear-gradient(150deg, rgb(34,44,51) 10%, rgb(50, 50, 50) 100%);
+    background: rgb(30 30 30);
+    /* background: linear-gradient(150deg, rgb(50 50 50) 10%, rgb(255 255 255) 100%); */
+    border-style: solid;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0;
+    border-width: 1px;
+    border-color: #d5d5d5;
 }
 
 .logo {
@@ -139,23 +163,24 @@ body {
     border-right: 0;
     border-top: 0;
     padding-bottom: 10px;
+    border: 0;
 }
 
 
 .p1 {
-        color: rgb(255, 255, 255);
-        font-family: "B";
-        font-size: 25px;
-        border-style: solid;
-        border-top: 0;
-        border-right: 0;
-        border-left: 0;
-        border-width: 1px;
-        border-color: rgba(120,3,4, 1);
-        border: 0;
-        padding: 0;
-        letter-spacing: 6px;
-        text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: "S";
+    font-size: 25px;
+    border-style: solid;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-width: 1px;
+    border-color: rgba(120,3,4, 1);
+    border: 0;
+    padding: 0;
+    letter-spacing: 0px;
+    text-align: center;
 }
 
 .p2 {
@@ -173,38 +198,43 @@ body {
 
 .navs {
     width: 100%;
+    /* color: #afaf00; */
     height: auto;
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 45px;
+    margin-top: 20px;
     overflow: hidden;
-    
 }
 
 .nav {
-    color: #ffffff;
-    width: 100%;
-    background: rgba(0, 0, 0, 0);
-    height: 40px;
+    color: rgb(131 131 131);
+    width: calc(100% - 50px);
+    width: 59%;
+    background: rgb(0 0 0 / 0%);
+    height: 41px;
     display: flex;
+    background: #ffffff00;
     justify-content: flex-start;
+    font-weight: 100;
     align-items: center;
     align-content: center;
-    padding-left: 20px;
-    border: solid 1px;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    font-family: 'F';
-    font-size: 11px;
-    border-color: #2e2e2e;
-    letter-spacing: 2px;
+    padding-left: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 0;
+    font-family: 'B';
+    border-radius: 0px 10px 10px 0px;
+    font-size: 13px;
+    border-color: #90909047;
+    letter-spacing: 1px;
     text-decoration: none;
     transition-duration: 0.2s;
 }
 
 .nav:hover {
-   background: rgb(190, 163, 5);
+    background: rgb(215 215 215);
+    color: black;
 }
 
 .navbarbot {

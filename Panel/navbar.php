@@ -14,12 +14,12 @@ if ( $_SERVER['REQUEST_METHOD']=='GET' && realpath(__FILE__) == realpath( $_SERV
     </div>
     <div class="navs">
         <a href="/Panel/Anasayfa/Anasayfa.php" class="nav">Anasayfa</a>
-        <a href="" class="nav">Faaliyet Alanlarımız</a>
+        <a href="/Panel/Hizmetler/Hizmetler.php" class="nav">Faaliyet Alanlarımız</a>
         <a href="/Panel/Ekibimiz/Ekibimiz.php" class="nav">Ekibimiz</a>
         <a href="/Panel/Blog/Blog.php" class="nav">Blog</a>
         <a href="/Panel/Hakkimizda/Hakkimizda.php" class="nav">Hakkımızda</a>
         <a href="" class="nav">Mesleki Sertifikalar</a>
-        <a href="" class="nav">İletişim</a>
+        <a href="../Iletisim/Iletisim.php" class="nav">İletişim</a>
     </div>
     </div>
     <div class="navbarbot">

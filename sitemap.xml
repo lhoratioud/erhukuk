@@ -16,7 +16,7 @@
 
    <url>
 
-      <loc>http://www.erhukukburosu.com/hakkimizda</loc>
+      <loc>https://www.erhukukburosu.com/hakkimizda</loc>
 
       <changefreq>weekly</changefreq>
 
@@ -24,7 +24,7 @@
 
    <url>
 
-      <loc>http://www.erhukukburosu.com/ekibimiz</loc>
+      <loc>https://www.erhukukburosu.com/ekibimiz</loc>
 
       <lastmod>2023-05-15</lastmod>
 
@@ -34,7 +34,7 @@
 
    <url>
 
-      <loc>http://www.erhukukburosu.com/iletisim</loc>
+      <loc>https://www.erhukukburosu.com/iletisim</loc>
 
       <lastmod>2023-05-15</lastmod>
 
@@ -44,19 +44,19 @@
 
    <url>
 
-      <loc>http://www.erhukukburosu.com/Blog</loc>
+      <loc>https://www.erhukukburosu.com/Blog</loc>
 
       <lastmod>2023-05-15</lastmod>
 
    </url>
 
-      <url>
 
-      <loc>http://www.erhukukburosu.com/Icon/android-icon-48x48.png</loc>
+   <url>
 
-      <lastmod>2023-05-15</lastmod>
+      <loc>https://www.erhukukburosu.com/calismaalanlari</loc>
+
+      <lastmod>2023-05-23</lastmod>
 
    </url>
-
 
 </urlset>

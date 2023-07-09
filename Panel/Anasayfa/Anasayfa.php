@@ -21,7 +21,6 @@
     </div>
         <div class="mainScreen">
 			
-			<?php require_once('../bottomdash.php'); ?>
             <div class="boxes">
                 <!--
                 <div class="box">
@@ -29,10 +28,10 @@
                     Anasayfa
                 </div>
                 -->
-                <div class="box">
+                <a href="../Hizmetler/Hizmetler.php" class="box">
                     <img class="boximg" src="../images/Panel/hizmet1.png" alt="">
                     Faaliyet Alanlarımız
-                </div>
+                </a>
                 <a href="../Ekibimiz/Ekibimiz.php" class="box">
                     <img class="boximg" src="../images/Panel/team1.png" alt="">
                     Ekibimiz
@@ -49,9 +48,9 @@
                     <img class="boximg" src="../images/Panel/sertifika1.png" alt="">
                     Mesleki Sertifikalar
                 </div>
-                <div class="box">
+                <a href="../Iletisim/Iletisim.php" class="box">
                     <img class="boximg" src="../images/Panel/ilet1.png" alt="">
                     İletişim
-                </div>
+                </a>
             </div>
 </body>

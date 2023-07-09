@@ -20,12 +20,12 @@
 }
 
 .h1 {
-    font-size: 37px;
-    font-family: "S";
+    font-size: 33px;
+    font-family: "P";
     /* font-weight: 600; */
     margin-top: 300px;
     color: white;
-    letter-spacing: 3px;
+    letter-spacing: 6px;
     margin-left: 50px;
 }
 

@@ -2,13 +2,16 @@
 
 <?php
 
+require_once('record_log.php');
+
+
 if(isset($_GET['a2']))
 {
     //$url = "/Blog.php?action=arama&ara=" . $_GET["a1"];
     $url = "/arama/" . $_GET["a1"];
     if($_GET["a1"] == '')
     {
-        header("Location: /Blog");
+        header("Location: /blog");
     }
     else {
         header("Location:" . " " . $url);
@@ -21,7 +24,7 @@ $limit = 8;
 $page = isset($_GET['page']) ? $_GET['page'] : 1;
 if(!is_numeric($page))
 {
-    header("Location: /Blog");
+    header("Location: /blog");
 }   
 $start = ($page - 1) * $limit;
 $total = null;
@@ -49,7 +52,7 @@ if(isset($_GET["action"]))
             $is_page_normal = 3;
             if(isset($_GET['page']))
             {
-                header("Location: /Blog");
+                header("Location: /blog");
             }
             $blog = $db->prepare("SELECT * FROM blog WHERE baslik LIKE CONCAT('%', :arama, '%')");
             $blog->bindParam(":arama", $_GET["ara"], PDO::PARAM_STR);
@@ -58,7 +61,7 @@ if(isset($_GET["action"]))
         }
         else 
         {
-            header("Location: /Blog");
+            header("Location: /blog");
         }
     }
     else if($_GET["action"] == "etiket")
@@ -78,11 +81,11 @@ if(isset($_GET["action"]))
         }
         else 
         {
-            header("Location: /Blog");
+            header("Location: /blog");
         }
     }
     else {
-        header("Location: /Blog");
+        header("Location: /blog");
     }
 }
 else {
@@ -109,7 +112,7 @@ $next = $page + 1;
 
 if(!(($page > 0) && ($page < $pages+1)))
 {
-    header("Location: /Blog");
+    header("Location: /blog");
 }
 
 
@@ -119,6 +122,14 @@ if(!(($page > 0) && ($page < $pages+1)))
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+     <!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-5XPW7W6BFX"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+  		gtag('config', 'G-5XPW7W6BFX');
+	</script>
     <base href="/">
     <script src="Utilities/JQuery.js"></script>
     <script src="Utilities/PageTemplate.js"></script>
@@ -130,26 +141,16 @@ if(!(($page > 0) && ($page < $pages+1)))
 	<meta name="google-site-verification" content="YCjcnxP8QU76BRKZjsX7txYgBvK4oV3C1ML6juLck8I" />
     <link rel="canonical" href="https://www.erhukuk.com.tr/" />
     <!-- FAV ICON START -->
-    <link rel="shortcut icon" href="https://www.erhukuk.com.tr/Icon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="57x57" href="https://www.erhukuk.com.tr/Icon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="https://www.erhukuk.com.tr/Icon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="https://www.erhukuk.com.tr/Icon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="https://www.erhukuk.com.tr/Icon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="https://www.erhukuk.com.tr/Icon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="https://www.erhukuk.com.tr/Icon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="https://www.erhukuk.com.tr/Icon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="https://www.erhukuk.com.tr/Icon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://www.erhukuk.com.tr/Icon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="https://www.erhukuk.com.tr/Icon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://www.erhukuk.com.tr/Icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="https://www.erhukuk.com.tr/Icon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://www.erhukuk.com.tr/Icon/favicon-16x16.png">
-    <link rel="manifest" href="https://www.erhukuk.com.tr/Icon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="https://www.erhukuk.com.tr/Icon/ms-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=4">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=4">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=4">
+    <link rel="manifest" href="/site.webmanifest?v=4">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=4" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicon.ico?v=4">
+    <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <!-- FAV ICON END -->
-    <title>Blog</title>
+    <title>Blog </title>
     <meta name="description" content="Son blog yazılarımıza göz atın!" />
 	
 </head>

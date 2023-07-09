@@ -10,14 +10,6 @@ setlocale(LC_ALL, 'tr_TR.UTF-8', 'tr-TR', 'tr', 'turkish');
 
 require_once("../../Utilities/conn.php");
 
-try {
-    $db = new PDO("mysql:host="._HOST.";dbname="._DBNAME."", _DBUSER, _DBPASS);
-}  catch (PDOException $ex) { 
-    echo $ex->getMessage();
-}
-
-$db->exec("SET NAMES 'utf8'; SET CHARSET 'utf8'");
-
 
 if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')   
      $url = "https://";   
@@ -29,7 +21,7 @@ $url.= $_SERVER['HTTP_HOST'];
 // Append the requested resource location to the URL   
 $url.= $_SERVER['REQUEST_URI'];    
   
-if($url == "http://erhukuk/Panel/Blog/YeniBlog.php")
+if($url == "https://erhukuk.com.tr/Panel/Blog/YeniBlog.php")
     {
 
     }

@@ -11,12 +11,12 @@
 }
 
 .h1 {
-    font-size: 22px;
+    font-size: 30px;
     font-family: "P";
-    font-weight: 500;
-    margin-top: 250px;
+    /* font-weight: 600; */
+    margin-top: 240px;
     color: white;
-    letter-spacing: 9px;
+    letter-spacing: 6px;
 }
 
 

@@ -1,6 +1,25 @@
+<?php
+
+require_once('Utilities/conn.php');
+require_once('record_log.php');
+
+$iletisim_cek = $db->prepare("SELECT * FROM iletisim LIMIT 1");
+$iletisim_cek->execute();
+$iletisim = $iletisim_cek->fetch(PDO::FETCH_ASSOC);
+
+?>
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+     <!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-5XPW7W6BFX"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+  		gtag('config', 'G-5XPW7W6BFX');
+	</script>
     <base href="/">
     <script src="Utilities/JQuery.js"></script>
     <script src="Utilities/PageTemplate.js"></script>
@@ -12,16 +31,20 @@
 	<meta name="google-site-verification" content="YCjcnxP8QU76BRKZjsX7txYgBvK4oV3C1ML6juLck8I" />
     <link rel="canonical" href="https://www.erhukuk.com.tr/" />
     <!-- FAV ICON START -->
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-	<meta name="msapplication-TileColor" content="#da532c">
-	<meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=4">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=4">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=4">
+    <link rel="manifest" href="/site.webmanifest?v=4">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=4" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicon.ico?v=4">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preload" as="font" type="font/woff" href="fonts/OpenSans-Light.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff" href="fonts/NexaBold.woff2" crossorigin>
     <!-- FAV ICON END -->
     <title>İletişim</title>
     <meta name="description" content="Bizimle aşağıdaki bilgileri kullanarak iletişime geçebilirsiniz;
-    Adres : Mansuroğlu Mahallesi, 1934. Sokak, No:6, Som Sitesi B Blok, Kat:2, Daire:5 Bayraklı / İzmir, Telefon : (555) 396 5151, Mail : erhukuk@erhukukburosu.com" />
+    Adres : Mansuroğlu Mahallesi, 1934. Sokak, No:6, Som Sitesi B Blok, Kat:2, Daire:5 Bayraklı / İzmir, Telefon : (555) 396 5151, Mail : erhukuk@erhukuk.com.tr" />
 
 	
 </head>
@@ -41,7 +64,7 @@
 				
 				
 				<div class="enterance">
-                    <div class="h1">İletişim</div>
+                    <div class="h1">Bize Ulaşın</div>
 				</div>
         </div>
 
@@ -49,22 +72,22 @@
             <div class="content_1_in">
 
                 <div class="leftcontent animatedFadeInUpslow animatedslow fadeInUpslow">
-                    <div class="head">Bize Ulaşın</div>
+                    <div class="head"></div>
                     <div class="subhead">Bize Aşağıdaki Kanallardan Ulaşabilirsiniz</div>
                     <div class="leftboxes">
                         <div class="box mail">
                             <div class="boxp1">Telefon / WhatsApp</div> 
-                            <div class="boxp2"> (555) 396 5151</div> 
+                            <div class="boxp2"><?php echo htmlspecialchars_decode($iletisim["PHONE"]); ?></div> 
                             <div class="boxp3">Pazartesi - Cuma | 08.00 - 18.00</div>
                         </div>
                         <div class="box adres">
                             <div class="boxp1">Adres</div> 
                             <div class="boxp2">Bayraklı / İzmir</div>
-                            <div class="boxp3">Mansuroğlu Mahallesi, 1934. Sokak, No:6, Som Sitesi B Blok, Kat:2, Daire:5</div>
+                            <div class="boxp3"><?php echo htmlspecialchars_decode($iletisim["ADRESS"]); ?></div>
                         </div>
                         <div class="box tel">
                             <div class="boxp1">Mail</div> 
-                            <div class="boxp2">erhukuk@erhukuk.com.tr</div>
+                            <div class="boxp2"><?php echo htmlspecialchars_decode($iletisim["MAIL"]); ?></div>
                             <div class="boxp3">En Yakın Zamanda Dönüş Yapılacaktır</div>
                         </div>
                     </div>
