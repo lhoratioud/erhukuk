@@ -74,7 +74,6 @@ $blog_tags = $db->prepare("SELECT TAG_NAME FROM tags WHERE BLOG_ID = :blog_id OR
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="preload" as="font" type="font/woff" href="fonts/OpenSans-Light.woff2" crossorigin>
-    <link rel="preload" as="font" type="font/woff" href="fonts/NexaBold.woff2" crossorigin>
     <!-- FAV ICON END -->
     <title> <?php echo $blog["BASLIK"];?></title>
 	
