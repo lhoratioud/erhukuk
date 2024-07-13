@@ -5,9 +5,9 @@
 <?php
 
 
-error_reporting(0);
+error_reporting(1);
 
-require_once('record_log.php');
+//require_once('record_log.php');
 
 
 $blog = $db->prepare("SELECT * FROM blog WHERE AKTIF = '1' ORDER BY ID DESC LIMIT 6");
@@ -61,7 +61,6 @@ $iletisim = $iletisim_cek->fetch(PDO::FETCH_ASSOC);
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="preload" as="font" type="font/woff" href="fonts/OpenSans-Light.woff2" crossorigin>
-    <link rel="preload" as="font" type="font/woff" href="fonts/NexaBold.woff2" crossorigin>
     <!-- FAV ICON END -->
   
     <title>Er Hukuk | Avukatlık ve Arabuluculuk</title>

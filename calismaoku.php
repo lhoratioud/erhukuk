@@ -61,7 +61,6 @@ if(isset($_GET["hizmetadi"]))
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="preload" as="font" type="font/woff" href="fonts/OpenSans-Light.woff2" crossorigin>
-    <link rel="preload" as="font" type="font/woff" href="fonts/NexaBold.woff2" crossorigin>
     <!-- FAV ICON END -->
     <title><?php if(isset($hizmet["HIZMET_ADI"])) echo $hizmet["HIZMET_ADI"];?></title>
     <meta name="description" <?php if(isset($hizmet["HIZMET_ADI"])) echo "content=' " . $hizmet["HIZMET_ADI"] . " çalışma alanımız hakkında.'"?> />

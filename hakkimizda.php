@@ -46,7 +46,6 @@ $hakkimizda_yazi = $hakkimizda->fetch(PDO::FETCH_ASSOC);
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="preload" as="font" type="font/woff" href="fonts/OpenSans-Light.woff2" crossorigin>
-    <link rel="preload" as="font" type="font/woff" href="fonts/NexaBold.woff2" crossorigin>
     <!-- FAV ICON END -->
     <title>Hakkımızda</title>
     <meta name="description" content=" Kuruluştan bugüne müvekkilerimizin çıkarını gözlemlediğimiz bu sürece, Av. Rahmi ÖZKUL ve Av. Erol KÖRÜKLÜ olarak başladık." />

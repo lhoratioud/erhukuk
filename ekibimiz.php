@@ -44,7 +44,6 @@ $ekip->execute();
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="preload" as="font" type="font/woff" href="fonts/OpenSans-Light.woff2" crossorigin>
-    <link rel="preload" as="font" type="font/woff" href="fonts/NexaBold.woff2" crossorigin>
     <!-- FAV ICON END -->
     <title>Ekibimiz</title>
   <meta name="description" content="Takımımız : Av. Rahmi ÖZKUL, Av. EROL KÖRÜKLÜ, Av. Ramazan ÇİVİCİ, Danışman Mehmet GÖKTÜRK" />

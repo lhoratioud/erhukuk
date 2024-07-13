@@ -40,7 +40,6 @@ $iletisim = $iletisim_cek->fetch(PDO::FETCH_ASSOC);
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="preload" as="font" type="font/woff" href="fonts/OpenSans-Light.woff2" crossorigin>
-    <link rel="preload" as="font" type="font/woff" href="fonts/NexaBold.woff2" crossorigin>
     <!-- FAV ICON END -->
     <title>İletişim</title>
     <meta name="description" content="Bizimle aşağıdaki bilgileri kullanarak iletişime geçebilirsiniz;

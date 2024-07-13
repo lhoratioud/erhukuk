@@ -1,10 +1,8 @@
 <?php 
 
-<?php 
-
 
 header("Content-Type: text/html; charset=utf-8");
-//error_reporting(0);
+error_reporting(1);
 setlocale(LC_ALL, 'tr_TR.UTF-8', 'tr-TR', 'tr', 'turkish');
 
 //define("_HOST", "localhost:3307");

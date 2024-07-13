@@ -44,7 +44,6 @@ $hizmetler->execute();
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="preload" as="font" type="font/woff" href="fonts/OpenSans-Light.woff2" crossorigin>
-    <link rel="preload" as="font" type="font/woff" href="fonts/NexaBold.woff2" crossorigin>
     <!-- FAV ICON END -->
     <title>Çalışma Alanları</title>
     <meta name="description" content="Er Hukuk Bürosu olarak, 10'u aşkın faaliyet alanıyla müvekkilerimize her türlü hukuki konuda yardımcı oluyoruz." />
